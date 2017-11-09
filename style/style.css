@@ -54,11 +54,11 @@ iframe{
 	background:url('../image/orion.jpg') center/cover no-repeat;
 }
 #wrapper .homeBack .item.cosmonaut{
-    background:url('../image/kosmonavt.jpg') center/cover no-repeat;
+    background:url('../image/cosmonaut.jpg') center/cover no-repeat;
     opacity: .85;
 }
 #wrapper .homeBack .item.space{
-    background:url('../image/kosmos.jpg') center/cover no-repeat;
+    background:url('../image/space.jpg') center/cover no-repeat;
 }
 #wrapper .homeBack .slick-dots{
     width:81px;
