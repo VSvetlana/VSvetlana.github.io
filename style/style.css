@@ -88,11 +88,13 @@ iframe{
 }
 /*--------------------------------------------------HEADER--------------------------------------------------*/
 #wrapper #header{
-	position: absolute;
-	top:2rem;
+	position: fixed;
+	top:0;
 	left:0;
 	right:0;
-	z-index:2;
+	z-index:3;
+    padding: 2rem 0 0 0;
+   /* background: #cadaec;**/
 }
 /*-------------------------------NavBar-------------------------------*/
 #wrapper #header .back{
@@ -358,7 +360,7 @@ iframe{
 	font-size: 1.92rem;
 	margin-bottom: calc(4.3rem + 20px);
 }
-.informations a{
+.informations .pinkButton{
 	position: relative;
 	font:700 2.24rem 'Montserrat';
 	color: #fff;
@@ -372,10 +374,10 @@ iframe{
 	transition: background .8s ease;
 	transition:border, color 2s ease;
 }
-.informations a:hover{
+.informations .pinkButton:hover{
 	background: #d30734;
 }
-.informations a:active{
+.informations .pinkButton:active{
 	background: rgba(0,0,0,.0);
 	border:1px solid #ff1e4f;
 	color:#ff1e4f;
@@ -487,7 +489,12 @@ iframe{
 	position: absolute;
 	bottom: 3.7rem;
 	left:2rem;
+    z-index: 2;
 	font:700 2.4rem 'Open Sans';
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5rem 2.5rem;
 	background: rgba(0,0,0,.65);
 	border-radius: 0;
 	transition: padding .8s linear;
@@ -842,7 +849,7 @@ iframe{
 	.informations .doubleContent .textBlock p{
 		font-size: 1.2rem;
 	}
-	.informations a{
+	.informations .pinkButton{
 		padding: 1.4rem 3rem;
 	}
 	.informations .doubleContent{
@@ -912,6 +919,10 @@ iframe{
     .informations.persons .person .fa{
         font-size: 2.5rem;
     }
+    .informations.persons .person a{
+        text-decoration: none;
+    }
+    
     #main .partners .partner{
         margin-bottom: 0;
     }

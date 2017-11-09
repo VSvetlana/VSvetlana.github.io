@@ -38,4 +38,16 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 1500);
     });
     
+    if ($(window).width() >= '768'){
+            $(window).scroll(function() {
+                if($(this).scrollTop() < $('#Services').offset().top){
+                    $('#header').css("background", "rgba(0,0,0,.0)");
+                }else if($('#Services').offset().top <= $(this).scrollTop() + 5){
+                    $('#header').css("background", "#555579").css("top", "0");
+                    //$('#header a').css("color", "#555579");
+                }
+            });
+    }
+    
+    
 });
